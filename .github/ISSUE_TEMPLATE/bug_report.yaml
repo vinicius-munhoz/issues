@@ -1,0 +1,38 @@
+name: Incidente de Guardia
+description: Preencha o que aconteceu durante o incidente tratado na guardia
+title: "[Incidente]: "
+labels: ["incidente", "triage"]
+assignees:
+  - vinicius-munhoz
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Quanto mais detalhes você puder informar melhor será para tomarmos as ações!
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: O que acionou a guardia?
+      description: Descreva o que fez a guardia ser acionada.
+      placeholder: Descreva com riqueza de detalhes
+    validations:
+      required: true
+  - type: textarea
+    id: scopes
+    attributes:
+      label: Escopos afetados
+      description: Quais escopos foram afetados pelo incidente?
+    validations:
+      required: true
+  - type: textarea
+    id: solution
+    attributes:
+      label: Qual foi a solução para o incidente?
+      description: Detalhe a solução tomada para resolver o incidente
+  - type: markdown
+    attributes:
+      value: |
+        Não esqueça de anexar imagens ou logs que vc considerar importantes!
+  
+
+
